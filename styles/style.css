@@ -2,4 +2,213 @@
 
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  font-size: 18px;
+  background-image:var(--bg-image);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;  
+}
+/* ----header----*/
+.header {
+  position: relative;
+  display: grid;
+  height: 100vh;
+  grid-template-rows: 1fr min-content 1fr;
+  align-items: center;
+  justify-items: end;
+  padding: var(--padding);  
+}
+.decorated-zone::after {
+  position: absolute;
+  content: "";
+  inline-size: 25px;
+  background-color: transparent;
+  top: 10px;
+  left: 339.96px;
+  block-size: 25px;
+  border-top:var(--border-st);
+  border-right:var(--border-st);
+
+}
+.decorated-zone::before{
+  position: absolute;
+  content: "";
+  top: 633px;
+  left: 10px;
+  inline-size: 25px;
+  background-color: transparent;
+  block-size: 25px;
+  border-bottom:var(--border-st);
+  border-left:var(--border-st);
+
+}
+.header__rec{
+  position: absolute;
+  text-transform: uppercase;
+  color:var(--accent-color);
+  text-align: center;
+  line-height: 25px;
+  top:10px;
+  left:304px;
+}
+.header__rec:after{
+  content: "";
+  display: inline-block;
+  box-shadow: 0px 0px 4px 2px #FF0070;
+  width:12px;
+  height:12px;
+  background-color: var(--accent-color);
+  border-radius: 50%;
+  margin-inline-start: 10px;
+}
+.header__theme-menu-list {
+  display: flex;
+  gap: 13px;
+  flex-direction:column;
+  justify-content: center;
+}
+
+.header__theme-menu-button {
+  color:var(--accent-color);
+  background-color: transparent;
+  border:none;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: lowercase;
+}
+
+.header__theme-menu-button_active {
+  border:var(--border-st);
+  pointer-events: none;
+}
+.header__theme-menu-button:hover{
+  border:var(--border-hover);
+  cursor: pointer;
+}
+.header__theme-menu-button:focus-visible{
+  outline: none;
+  border-bottom: var(--border-st);
+}
+
+.header__title {
+  text-shadow: 4px 4px 0 var(--accent-color);
+  font-size:var(--logo-size);
+  
+}
+/* decor */
+.caption__decor{
+  color:var(--cp-color);
+  text-shadow: 2px 2px 0 var(--accent-color); 
+  font-size:var(--logo-size);
+  line-height: 95.7px;
+  
+}
+.title-decor {
+  background-color: var(--accent-color);
+  color:var(--text-color);
+  font-size: 18px;
+  font-weight: 700;
+}
+.section__decor{
+  color:var(--accent-color);
+  font-size: 18px;
+  font-weight: 700;
+}
+.subtitle__decor{
+  color:var(--accent-text-color);
+  font-size: 18px;
+  font-weight: 400;
+}
+.decoration__title {
+  font-weight:var(--ft-weight);
+}
+/*----main---*/
+.main {
+  display: grid;
+  padding-block: 40px;
+  padding-inline: 10px;
+  gap:50px;
+}
+.section {
+  display: grid;
+  gap: 20px;
+}
+.section__text {
+  display: grid;
+  line-height: 23.4px;
+  font-weight: 400;
+}
+.subtitle__container {
+
+}
+.decoration__subtitle {
+
+}
+.subtitle__text {
+}
+/*---decor link---*/
+.link {
+  text-decoration: none;
+  text-shadow:2px 2px 0px var(--link-st);
+}
+.link:hover {
+  border-bottom:var(--accent-text-color);
+
+}
+.link:focus{
+  outline:none;
+}
+.link:focus-visible{
+  outline:1px solid var(--accent-text-color);
+}
+/*-----img block---- */
+.section__gallery{
+  display: grid;
+  gap:10px;
+  grid-template-rows: repeat(5, auto);
+  grid-template-areas: 
+  "sunset"
+  "ice-cream"
+  "tape"
+  "books"
+  "street";
+}
+.image{
+  width: 100%;
+  object-fit: cover;  
+}
+.sunset {
+  grid-area: sunset;
+
+}
+.ice-cream {
+  grid-area: ice-cream;
+
+}
+.tape {
+  grid-area: tape;
+
+}
+.books{
+  grid-area: books;
+}
+.street {
+  grid-area: street;
+
+}
+/*----footer---*/
+.footer {
+  position: relative;
+  display: flex;
+  padding: var(--padding);
+  align-items: center;
+  min-block-size: 668px;
+  justify-content: center;
+}
+
+.footer__title {
+
 }
