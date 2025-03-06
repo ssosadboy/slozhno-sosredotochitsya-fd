@@ -9,8 +9,15 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
-}
-
-.theme-light .page {
-  /* Вам также нужно будет написать ряд подобных селекторов */
+  --bg-image: url(../images/cover-image-light.png);
+  --accent-color:#FF8DCB;
+  --ac-color: #353430;
+  --text-color: #353430;
+  --accent-text-color:#353430;
+  --border-st: 1px solid #353430;
+  --border-hover: 1px solid #32312d66;
+  --cp-color: #ffc2e6;
+  --link-st: rgba(255, 141, 203, 0.8);
+  --ft-weight:700;
+  --ft-weight-s:400;
 }

@@ -12,10 +12,10 @@
   --logo-size:clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   --padding:10px;
   --ft-weight:700;
+  --ft-weight-s:400;
   --border-st:1px solid #FF0070;
   --border-hover:1px solid #FF007066;
   --link-st: rgba(255, 0, 111, 0.8);
-
 }
 
 

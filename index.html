@@ -7,7 +7,7 @@
     <meta name="color-scheme" content="dark light" />
     <title>Сложно сосредоточиться</title>
     <link rel="icon" href="./images/favicon.ico" sizes="any" />
-    <link rel="icon" href="icon.svg" type="image/svg+xml" />
+    <link rel="icon" href="/images/favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
     <script src="./scripts/script.js"></script>
     <link rel="stylesheet" href="./fonts/fonts.css" />
@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/dark.css" />
     <link rel="stylesheet" href="./styles/light.css" />
+    <link rel="mobile-icon" href="./images/mobile-icon.png" />
   </head>
   <body class="page">
     <header class="header decorated-zone">
@@ -54,12 +55,12 @@
       </p>
     </header>
     <main class="main">
-      <section class="section">
+      <section class="section section__article__list">
         <h2 class="section__text section__decor">
           Почему сосредоточиться так сложно
         </h2>
         <div class="subtitle__container">
-          <article>
+          <article class="article">
             <h3 class="decoration__subtitle title-decor">Многозадачность</h3>
             <p class="subtitle__text subtitle__decor">
               Особенно сложно сосредоточиться, когда задач много и все они —
@@ -74,7 +75,7 @@
               ошибаемся и быстро устаём.
             </p>
           </article>
-          <article>
+          <article class="article">
             <h3 class="decoration__subtitle title-decor">Дофамин</h3>
             <p class="subtitle__text subtitle__decor">
               С гормонами стресса всё понятно, но дальше — ещё интереснее. В
@@ -95,7 +96,7 @@
         </h2>
         <div class="subtitle__container">
           <h3 class="decoration__title title-decor">Многозадачность</h3>
-          <article>
+          <article class="article">
             <p class="subtitle__text subtitle__decor">
               Как концентрация может снижаться из-за… концентрации? Любая
               стрессовая ситуация (и резко меняющийся мир в целом) заставляет
@@ -105,7 +106,7 @@
               может не выдержать, если не давать ей отдохнуть.
             </p>
           </article>
-          <article>
+          <article class="article">
             <h3 class="decoration__title title-decor">Еда</h3>
             <p class="subtitle__text subtitle__decor">
               «Быстрые углеводы» — сахар, белый хлеб, сладости — молниеносно
@@ -116,7 +117,7 @@
               хотим ещё больше быстрых углеводов.
             </p>
           </article>
-          <article>
+          <article class="article">
             <h3 class="decoration__title title-decor">Гаджеты</h3>
             <p class="subtitle__text subtitle__decor">
               Да-да, это та самая ситуация, когда на экране ноутбука — код, в
@@ -130,19 +131,19 @@
           </article>
         </div>
       </section>
-      <section class="section">
+      <section class="section section_how">
         <h2 class="section__text section__decor">
           Как концентрироваться лучше, чем золотая рыбка (то есть дольше трёх
           секунд)
         </h2>
         <div class="subtitle__container">
-          <h3 class="decoration__title title-decor">
+          <h3 class="decoration__title-s title-decor section_how_title">
             5 простых (на самом деле не очень) советов
           </h3>
         </div>
         <div class="subtitle__container">
-          <article>
-            <h4 class="decoration__title title-decor">
+          <article class="article article__item">
+            <h4 class="decoration__title-s title-decor">
               Представьте небо и облака
             </h4>
             <p class="subtitle__text subtitle__decor">
@@ -156,8 +157,8 @@
               проблемах из будущего.
             </p>
           </article>
-          <article>
-            <h4 class="decoration__title title-decor">Включите музыку</h4>
+          <article class="article article__item">
+            <h4 class="decoration__title-s title-decor">Включите музыку</h4>
             <p class="subtitle__text subtitle__decor">
               Но не любую, и не любимую. Любимая может быть связана с сильными
               положительными эмоциями, которые тоже очень сильно отвлекают.
@@ -165,8 +166,8 @@
               попробовать включить плейлист с «белым шумом» или нейромузыкой.
             </p>
           </article>
-          <article>
-            <h4 class="decoration__title title-decor">Прогуляйтесь</h4>
+          <article class="article article__item">
+            <h4 class="decoration__title-s title-decor">Прогуляйтесь</h4>
             <p class="subtitle__text subtitle__decor">
               Или даже пробегитесь. Лучше найти парк или лес: один эксперимент
               <a class="link" href="#0" target="_blank">показал</a>, что
@@ -177,8 +178,8 @@
               простая двадцатиминутная прогулка — тоже отличный вариант.
             </p>
           </article>
-          <article>
-            <h4 class="decoration__title title-decor">Хорошо ешьте</h4>
+          <article class="article article__item">
+            <h4 class="decoration__title-s title-decor">Хорошо ешьте</h4>
             <p class="subtitle__text subtitle__decor">
               Мы — не ваша бабушка, но это правда важно. Выбирайте продукты,
               которые препятствуют резким скачкам сахара в крови. Например, с
@@ -186,8 +187,8 @@
               чечевица, фасоль), коричневый рис, хлеб из цельнозерновой пшеницы.
             </p>
           </article>
-          <article>
-            <h4 class="decoration__title title-decor">Читайте</h4>
+          <article class="article article__item">
+            <h4 class="decoration__title-s title-decor">Читайте</h4>
             <p class="subtitle__text subtitle__decor">
               Настоящие бумажные книги. Это правда помогает с концентрацией:
               чтобы прочитать пост в соцсети, достаточно нескольких минут или
@@ -197,24 +198,34 @@
           </article>
         </div>
       </section>
-       <section class="section__gallery">
+      <section class="section__gallery">
         <h2 class="section__text title-decor">А можно в картинках?</h2>
-        <div class="img_block">
-          <img
-            class="image sunset"
-            src="./images/sunset.png"
-            alt="Закат с видом на горы и озеро с птицами"
-          />
-          <img
-            class="image ice-cream"
-            src="./images/ice-cream.png"
-            alt="четыре шарика мороженного в желтой чашке"
-          />
-          <img class="image tape" src="./images/tape.png" alt="Аудио-Видео кассета" />
-          <img class="image books" src="./images/books.png" alt="Стопка книг"/>
-          <img class="image street" src="./images/street.png" alt="Пустая улица" />
-        </div>
-      </section> 
+        <ul class="gallery">
+          <li class="gallery__item sunset">
+            <img src="./images/sunset.png" alt="Закат" class="gallery__image" />
+          </li>
+
+          <li class="gallery__item ice-cream_pic">
+            <img
+              src="./images/ice-cream.png"
+              alt="Мороженое"
+              class="gallery__image"
+            />
+          </li>
+
+          <li class="gallery__item tape">
+            <img src="./images/tape.png" alt="Кассета" class="gallery__image" />
+          </li>
+
+          <li class="gallery__item books">
+            <img src="./images/books.png" alt="Книги" class="gallery__image" />
+          </li>
+
+          <li class="gallery__item street">
+            <img src="./images/street.png" alt="Улица" class="gallery__image" />
+          </li>
+        </ul>
+      </section>
     </main>
     <footer class="footer decorated-zone">
       <h2 class="footer__title caption__decor">focus</h2>
