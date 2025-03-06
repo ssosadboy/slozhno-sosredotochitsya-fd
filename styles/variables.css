@@ -2,27 +2,24 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
-:root{
-  --bg-image:url("../images/cover-image-dark.png");
-  --font-family:IBM Plex Mono ,sans-serif;
-  --accent-color:#FF0070;
-  --text-color:#000028;
-  --accent-text-color:#F1B2CE;
-  --cp-color:#DB00FF;
-  --logo-size:clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  --padding:10px;
-  --ft-weight:700;
-  --ft-weight-s:400;
-  --border-st:1px solid #FF0070;
-  --border-hover:1px solid #FF007066;
+:root {
+  --bg-image: url("../images/cover-image-dark.png");
+  --font-family: IBM Plex Mono, sans-serif;
+  --accent-color: #ff0070;
+  --text-color: #000028;
+  --accent-text-color: #f1b2ce;
+  --cp-color: #db00ff;
+  --logo-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --padding: 10px;
+  --ft-weight: 700;
+  --ft-weight-s: 400;
+  --border-st: 1px solid #ff0070;
+  --border-hover: 1px solid #ff007066;
   --link-st: rgba(255, 0, 111, 0.8);
 }
 
-
-
-
-@media (width >= 768px){
-  :root{
-    --logo-size:clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+@media (width >= 768px) {
+  :root {
+    --logo-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 }
