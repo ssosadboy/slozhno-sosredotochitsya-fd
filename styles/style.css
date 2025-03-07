@@ -85,7 +85,7 @@
 }
 
 .header__theme-menu-button:hover {
-  outline: 1px solid var(--button-color);
+  outline: 1px solid var(--button-color-hover);
 }
 
 .header__theme-menu-button:focus {
@@ -146,28 +146,28 @@
   gap: 20px;
 }
 
-.main__section:first-child {
+.main__section-caption {
   grid-template-columns: 315px 1fr;
   row-gap: 20px;
 }
 
-.main__section:first-child .main__section-title {
+.main__section-caption .main__section-title {
   grid-row: span 2;
 }
 
-.main__section:nth-child(2) {
+.main__section-concentration {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, auto);
   column-gap: 20px;
   row-gap: 20px;
 }
 
-.main__section:nth-child(2) .main__section-title {
+.main__section-concentration .main__section-title {
   grid-column: span 3;
   width: 30%;
 }
 
-.main__section:nth-child(3) {
+.main__section-how {
   grid-template-columns: 315px 1fr;
 }
 
@@ -221,7 +221,7 @@
   outline: 1px solid var(--text-color);
 }
 
-.main__section:last-child {
+.main__section-image {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -303,15 +303,15 @@
     gap: 157px;
   }
 
-  .main__section:first-child {
+  .main__section-caption {
     grid-template-columns: 236px 1fr;
   }
 
-  .main__section:nth-child(2) {
+  .main__section-concentration {
     grid-template-columns: 1fr;
   }
 
-  .main__section:nth-child(2) .main__section-title {
+  .main__section-concentration .main__section-title {
     grid-column: span 1;
   }
 
@@ -319,7 +319,7 @@
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   }
 
-  .main__section:nth-child(3) {
+  .main__section-how {
     grid-template-columns: 236px 1fr;
   }
 }
@@ -336,7 +336,6 @@
 
   .header__title {
     margin-inline-start: 0;
-    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   }
 
   .header__text {
@@ -365,25 +364,24 @@
     gap: 50px;
   }
 
-  .main__section:first-child {
+  .main__section-caption {
     row-gap: 24px;
   }
 
-  .main__section:nth-child(2) {
+  .main__section-concentration {
     width: 100%;
     row-gap: 24px;
   }
 
-  .main__section:first-child,
-  .main__section:nth-child(3) {
+  .main__section-caption .main__section-how {
     grid-template-columns: 1fr;
   }
 
-  .main__section:nth-child(2) .main__section-title {
+  .main__section-concentration .main__section-title {
     width: 100%;
   }
 
-  .main__section:last-child {
+  .main__section-image {
     display: flex;
     flex-direction: column;
     gap: 10px;
