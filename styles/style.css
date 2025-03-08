@@ -47,6 +47,7 @@
   top: 20px;
   right: 27px;
   color: var(--accent-color);
+  display: var(--display);
 }
 
 .rec::after {
@@ -93,6 +94,7 @@
 }
 
 .header__theme-menu-button:focus-visible {
+  outline: none;
   border-block-end: 1px solid var(--decorated-color);
 }
 
@@ -259,7 +261,7 @@
   grid-area: street;
 }
 
-.main__section:last-child .title-decor {
+.main__section-image .title-decor {
   grid-area: title;
 }
 
@@ -279,7 +281,7 @@
   font-size: clamp(7.5rem, 0.75rem + 14.0625vw, 9.75rem);
   font-weight: var(--ft-weight);
   line-height: 82.5%;
-  text-shadow: 4px 4px 0px var(--title-shadow-color);
+  text-shadow: 2px 2px 0px var(--title-shadow-color);
 }
 
 @media (width <=768px) {

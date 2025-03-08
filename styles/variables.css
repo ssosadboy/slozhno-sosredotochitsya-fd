@@ -12,6 +12,8 @@
   --border-st: 1px solid #ff0070;
   --section-text-color: var(--accent-color);
   --button-color: var(--accent-color);
+  --decorated-color: #ff0070;
+  --button-color-hover: rgb(255, 0, 112, 0.4);
   --text-color: #f1b2ce;
   --main-font-family: "IBM Plex Mono", "monospace";
   --main-font-size: 18px;
