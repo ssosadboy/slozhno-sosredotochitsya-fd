@@ -24,3 +24,26 @@
   --bg-color: #353430;
   --display: none;
 }
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg-image: url(../images/cover-image-light.png);
+    color: #353430;
+    --title-color: #ffc2e6;
+    --accent-color: #ff8dcb;
+    --text-color: #353430;
+    --border-st: 1px solid #353430;
+    --title-shadow-color: #ff8dcb;
+    --main-text-color: #353430;
+    --decorated-color: #353430;
+    --section-text-color: var(--main-text-color);
+    --button-color: var(--text-color);
+    --button-color-hover: rgb(50, 49, 45, 0.4);
+    --bg-color: #353430;
+    --display: none;
+  }
+
+  .rec {
+    display: none;
+  }
+}
